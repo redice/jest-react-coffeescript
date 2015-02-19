@@ -2,6 +2,7 @@
   "name": "jest-test",
   "version": "0.0.1",
   "description": "A Jest unit test boilterplate for React & CoffeeScript",
+  "repository": "https://github.com/Cotidia/jest-react-coffeescript.git",
   "devDependencies": {
     "jest-cli": "^0.2.2"
   },
