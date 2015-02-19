@@ -1,0 +1,21 @@
+{
+  "name": "jest-test",
+  "version": "0.0.1",
+  "description": "A Jest unit test boilterplate for React & CoffeeScript",
+  "devDependencies": {
+    "jest-cli": "^0.2.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "react": "*",
+    "react-tools": "*"
+  },
+  "jest": {
+    "scriptPreprocessor": "preprocessor.js",
+    "testFileExtensions": ["coffee"],
+    "unmockedModulePathPatterns": ["node_modules/react"]
+  }
+}
