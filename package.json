@@ -2,21 +2,20 @@
   "name": "jest-test",
   "version": "0.0.1",
   "description": "A Jest unit test boilterplate for React & CoffeeScript",
-  "repository": "https://github.com/Cotidia/jest-react-coffeescript.git",
-  "devDependencies": {
-    "jest-cli": "^0.2.2"
-  },
+  "repository": "https://github.com/redice/jest-react-coffeescript",
+  "license": "MIT",
   "scripts": {
     "test": "jest"
   },
-  "dependencies": {
-    "coffee-script": "*",
-    "react": "*",
-    "react-tools": "*"
-  },
   "jest": {
     "scriptPreprocessor": "preprocessor.js",
-    "testFileExtensions": ["coffee"],
-    "unmockedModulePathPatterns": ["node_modules/react"]
+    "testFileExtensions": ["coffee", "js"],
+    "moduleFileExtensions": ["coffee", "js"],
+    "unmockedModulePathPatterns": ["react"]
+  },
+  "dependencies": {
+    "coffee-script": "~1.10",
+    "coffee-react-transform": "~3",
+    "react": "~0.13"
   }
 }
