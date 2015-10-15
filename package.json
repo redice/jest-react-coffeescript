@@ -9,9 +9,23 @@
   },
   "jest": {
     "scriptPreprocessor": "preprocessor.js",
-    "testFileExtensions": ["coffee", "js"],
-    "moduleFileExtensions": ["coffee", "js"],
-    "unmockedModulePathPatterns": ["react"]
+    "testFileExtensions": [
+      "coffee",
+      "js",
+      "cjsx"
+    ],
+    "moduleFileExtensions": [
+      "coffee",
+      "js",
+      "cjsx",
+      "json"
+    ],
+    "unmockedModulePathPatterns": [
+      "node_modules/react"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules"
+    ]
   },
   "dependencies": {
     "coffee-script": "~1.10",
